@@ -13,3 +13,8 @@ docker-compose build
 docker-compose down
 docker-compose rm
 docker-compose up
+
+
+cd /etc/nginx/
+ls -lt
+cat nginx.conf

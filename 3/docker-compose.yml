@@ -10,7 +10,7 @@ services:
   website:
     image: "cmacica-web1:latest"
     build:
-      context: angular/
+      context: angular3/
       dockerfile: ./Dockerfile
     ports:
       - 8081:80
@@ -19,4 +19,4 @@ services:
     ports:
       - 8083:80
     volumes:
-      - /Proyectos/cmacica/curso_docker/docker-compose/3/nginx/html:/usr/share/nginx/html:ro
+      - ./nginx/html:/usr/share/nginx/html:ro

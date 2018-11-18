@@ -13,6 +13,10 @@ services:
      image: jmoralesadrianzen/tci-customers:2.0.0
      # ports:
      #   - "9072:9072"
+   tci-web:
+     image: rymesz/tci-web:1.0.0
+     ports:
+        - 8085:80
    tci-gates:
      image: "nginx:1.13.8-alpine"
      volumes:

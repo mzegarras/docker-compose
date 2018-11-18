@@ -1,4 +1,7 @@
-
+1.- Ejecutar containers
+docker run -p 9070:9070 -d dreytpo/tci-creditcard:3.0.0
+docker run -p 9071:9071 -d fabiosalasm/tci-accounts:2.0.0
+docker run -p 9072:9072 -d jmoralesadrianzen/tci-customers:2.0.0
 
 1.- Definir Response de los servicios
         Customers
@@ -36,19 +39,20 @@
   http://localhost:8085/credit-card?dni=1231312
   http://localhost:9070/tci-creditcard/{dni}
   TCI-CreditsCards:2.0.0
-  docker run -p 9070:9070 dreytpo/tci-creditcard:3.0.0
+  docker run -p 9070:9070 -d dreytpo/tci-creditcard:3.0.0
 
   Accounts:
   http://localhost:8087/list/1234568
   http://localhost:9071/tci-accounts/1234568
   TCI-Accounts:2.0.0
-  docker run -p 9071:9071 fabiosalasm/tci-accounts:2.0.0
+  docker run -p 9071:9071 -d fabiosalasm/tci-accounts:2.0.0
+
 
   Customers:
   http://localhost:8086/customer/clientes
   http://localhost:9072/tci-customers/
   TCI-Customers:2.0.0
-  docker run -p 9072:9072 jmoralesadrianzen/tci-customers:2.0.0
+  docker run -p 9072:9072 -d jmoralesadrianzen/tci-customers:2.0.0
 
 4.-
   http://localhost:8080/customers/

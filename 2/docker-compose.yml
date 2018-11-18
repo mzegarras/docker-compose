@@ -4,8 +4,8 @@ services:
   app:
     image: nginx:alpine
     ports:
-      #- 80:80
-      - 8083:8083
+      #- 9082:80
+      - 9090:8083
     volumes:
-      - /Proyectos/cmacica/curso_docker/docker-compose/2/volume:/usr/share/nginx/html:ro
-      - /Proyectos/cmacica/curso_docker/docker-compose/2/volume/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./volume:/usr/share/nginx/html:ro
+      - ./volume/nginx.conf:/etc/nginx/nginx.conf:ro

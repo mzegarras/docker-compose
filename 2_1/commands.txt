@@ -1,0 +1,7 @@
+docker-compose build
+docker-compose up
+docker ps
+docker exec -it 04ac1b851754 /bin/sh
+cd /usr/share/nginx/html
+ls -lt
+cat index.html

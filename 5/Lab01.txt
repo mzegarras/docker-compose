@@ -1,7 +1,14 @@
 1.- Ejecutar containers
+
 docker run -p 9070:9070 -d dreytpo/tci-creditcard:3.0.0
 docker run -p 9071:9071 -d fabiosalasm/tci-accounts:2.0.0
 docker run -p 9072:9072 -d jmoralesadrianzen/tci-customers:2.0.0
+
+2.- Verificar servicios
+
+http://localhost:9070/tci-creditcard/12345678
+http://localhost:9071/tci-accounts/1234568
+http://localhost:9072/tci-customers/
 
 1.- Definir Response de los servicios
         Customers

@@ -10,6 +10,8 @@ http://localhost:9070/tci-creditcard/12345678
 http://localhost:9071/tci-accounts/1234568
 http://localhost:9072/tci-customers/
 
+3.- Docker-componse que levante los 3 servicios
+
 1.- Definir Response de los servicios
         Customers
           Get /list

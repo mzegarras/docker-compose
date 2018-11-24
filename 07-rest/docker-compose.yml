@@ -35,7 +35,7 @@ services:
   proxy-reverse:
     image: "nginx:1.13.8-alpine"
     volumes:
-      - "$PWD/nginx.conf:/etc/nginx/nginx.conf"
+      - "./nginx.conf:/etc/nginx/nginx.conf"
     ports:
       - 8083:8083
     depends_on:

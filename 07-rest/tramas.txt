@@ -1,0 +1,11 @@
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+	"nombre": "Mossy",
+	"email": "mossy1@gmail.com",
+	"password": "abc123",
+	"role": "ADMIN_ROLE"
+}
+====================
+POST http://localhost:8083/api

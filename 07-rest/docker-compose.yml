@@ -18,6 +18,8 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    depends_on:
+      - mongo
 
   rest-api:
     image: nodedemo
@@ -27,8 +29,8 @@ services:
     ports:
       - 3000:3000
     depends_on:
-      - mongo
       - mongo-express
+      - mongo
 
   proxy-reverse:
     image: "nginx:1.13.8-alpine"
